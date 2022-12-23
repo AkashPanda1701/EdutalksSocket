@@ -3,7 +3,7 @@ require("dotenv").config();
 const express = require("express");
 const connectDB = require("./.config/db");
 const cors = require("cors");
-const PORT = 8000;
+const PORT = process.env.PORT;
 
 const { Server } = require("socket.io");
 const http = require("http");
